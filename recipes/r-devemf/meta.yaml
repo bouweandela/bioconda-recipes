@@ -12,7 +12,7 @@ source:
   sha256: cbb0f832dd59cea7c546ad0cdec100f49a7310694b3b32ef1c188bfa19dcf8e7
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,6 +40,8 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - fontconfig  # [linux]
+    - zlib  # [linux]
   run:
     - r-base
 
