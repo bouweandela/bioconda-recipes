@@ -9,10 +9,10 @@ log: |2-
     copy_test_source_files: true
 
 
-  source tree in: /opt/conda/conda-bld/bioconductor-acme_1773249100896/work
-  export PREFIX=/opt/conda/conda-bld/bioconductor-acme_1773249100896/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place
-  export BUILD_PREFIX=/opt/conda/conda-bld/bioconductor-acme_1773249100896/_build_env
-  export SRC_DIR=/opt/conda/conda-bld/bioconductor-acme_1773249100896/work
+  source tree in: /opt/conda/conda-bld/bioconductor-acme_1773251986652/work
+  export PREFIX=/opt/conda/conda-bld/bioconductor-acme_1773251986652/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place
+  export BUILD_PREFIX=/opt/conda/conda-bld/bioconductor-acme_1773251986652/_build_env
+  export SRC_DIR=/opt/conda/conda-bld/bioconductor-acme_1773251986652/work
   INFO: activate-binutils_linux-64.sh made the following environmental changes:
   ADDR2LINE=x86_64-conda-linux-gnu-addr2line
   AR=x86_64-conda-linux-gnu-ar
@@ -59,7 +59,7 @@ log: |2-
   -CONDA_BUILD_SYSROOT=
   During startup - Warning message:
   Setting LC_TIME failed, using "C"
-  * installing to library /opt/conda/conda-bld/bioconductor-acme_1773249100896/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library
+  * installing to library /opt/conda/conda-bld/bioconductor-acme_1773251986652/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library
   * installing *source* package ACME ...
   ** this is package ACME version 2.66.0
   ** package ACME successfully unpacked and MD5 sums checked
@@ -71,9 +71,9 @@ log: |2-
      86 |     {"windowChisq",&windowChisq,5},
         |                    ^
   windowChisq.c:86:20: note: (near initialization for 'callMethods[0].fun')
-  make: *** [/opt/conda/conda-bld/bioconductor-acme_1773249100896/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/etc/Makeconf:204: windowChisq.o] Error 1
+  make: *** [/opt/conda/conda-bld/bioconductor-acme_1773251986652/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/etc/Makeconf:204: windowChisq.o] Error 1
   ERROR: compilation failed for package ACME
-  * removing /opt/conda/conda-bld/bioconductor-acme_1773249100896/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library/ACME
+  * removing /opt/conda/conda-bld/bioconductor-acme_1773251986652/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/lib/R/library/ACME
   Traceback (most recent call last):
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2570, in build
       utils.check_call_env(
@@ -82,7 +82,7 @@ log: |2-
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
       raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/bioconductor-acme_1773249100896/work/conda_build.sh']' returned non-zero exit status 1.
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/bioconductor-acme_1773251986652/work/conda_build.sh']' returned non-zero exit status 1.
 
   The above exception was the direct cause of the following exception:
 
@@ -100,5 +100,5 @@ log: |2-
                            ^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/bioconductor-acme_1773249100896/work/conda_build.sh']' returned non-zero exit status 1.
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/bioconductor-acme_1773251986652/work/conda_build.sh']' returned non-zero exit status 1.
 # Last 100 lines of the build log.
