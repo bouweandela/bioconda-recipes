@@ -4,10 +4,10 @@ log: |2-
     copy_test_source_files: true
 
 
-  source tree in: /opt/conda/conda-bld/hmntrimmer_1773247891189/work
-  export PREFIX=/opt/conda/conda-bld/hmntrimmer_1773247891189/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
-  export BUILD_PREFIX=/opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env
-  export SRC_DIR=/opt/conda/conda-bld/hmntrimmer_1773247891189/work
+  source tree in: /opt/conda/conda-bld/hmntrimmer_1773250719208/work
+  export PREFIX=/opt/conda/conda-bld/hmntrimmer_1773250719208/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl
+  export BUILD_PREFIX=/opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env
+  export SRC_DIR=/opt/conda/conda-bld/hmntrimmer_1773250719208/work
   INFO: activate-binutils_linux-64.sh made the following environmental changes:
   ADDR2LINE=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-addr2line
   AR=$BUILD_PREFIX/bin/x86_64-conda-linux-gnu-ar
@@ -60,17 +60,17 @@ log: |2-
   rm -f -r obj
   $BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c -I $PREFIX/include -L $PREFIX/lib -std=c14 -O3 -W -Wall -pedantic -lrt -DNDEBUG -DSEQAN_ENABLE_DEBUG=0 -DSEQAN_ENABLE_TESTING=0 -DSEQAN_HAS_ZLIB=1 -lz -DSEQAN_HAS_OPENMP=1 -lgomp -fopenmp -lpthread -lisal -DSEQAN_HAS_IGZIP=1 -c src/hmntrimmer.cpp -o obj/hmntrimmer.o
   $BUILD_PREFIX/bin/x86_64-conda-linux-gnu-c ./obj/hmntrimmer.o -I $PREFIX/include -L $PREFIX/lib -std=c14 -O3 -W -Wall -pedantic -lrt -DNDEBUG -DSEQAN_ENABLE_DEBUG=0 -DSEQAN_ENABLE_TESTING=0 -DSEQAN_HAS_ZLIB=1 -lz -DSEQAN_HAS_OPENMP=1 -lgomp -fopenmp -lpthread -lisal -DSEQAN_HAS_IGZIP=1 -o HmnTrimmer
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function spdlog::details::fmt_helper::pad2(int, fmt::v12::basic_memory_buffer<char, 250ul, fmt::v12::detail::allocator<char> >&)':
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function spdlog::details::fmt_helper::pad2(int, fmt::v12::basic_memory_buffer<char, 250ul, fmt::v12::detail::allocator<char> >&)':
   hmntrimmer.cpp:(.text._ZN6spdlog7details10fmt_helper4pad2EiRN3fmt3v1219basic_memory_bufferIcLm250ENS3_6detail9allocatorIcEEEE[_ZN6spdlog7details10fmt_helper4pad2EiRN3fmt3v1219basic_memory_bufferIcLm250ENS3_6detail9allocatorIcEEEE]0xce): undefined reference to fmt::v12::detail::vformat_to(fmt::v12::detail::buffer<char>&, fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>, fmt::v12::locale_ref)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function spdlog::logger::sink_it_(spdlog::details::log_msg const&)':
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function spdlog::logger::sink_it_(spdlog::details::log_msg const&)':
   hmntrimmer.cpp:(.text._ZN6spdlog6logger8sink_it_ERKNS_7details7log_msgE[_ZN6spdlog6logger8sink_it_ERKNS_7details7log_msgE]0xe8): undefined reference to fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function void spdlog::logger::log_<char*>(spdlog::source_loc, spdlog::level::level_enum, fmt::v12::basic_string_view<char>, char*&&)':
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function void spdlog::logger::log_<char*>(spdlog::source_loc, spdlog::level::level_enum, fmt::v12::basic_string_view<char>, char*&&)':
   hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0xb5): undefined reference to fmt::v12::detail::vformat_to(fmt::v12::detail::buffer<char>&, fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>, fmt::v12::locale_ref)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0x731): undefined reference to fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function void spdlog::logger::log_<unsigned int&>(spdlog::source_loc, spdlog::level::level_enum, fmt::v12::basic_string_view<char>, unsigned int&)':
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJPcEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0x731): undefined reference to fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function void spdlog::logger::log_<unsigned int&>(spdlog::source_loc, spdlog::level::level_enum, fmt::v12::basic_string_view<char>, unsigned int&)':
   hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0xb4): undefined reference to fmt::v12::detail::vformat_to(fmt::v12::detail::buffer<char>&, fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>, fmt::v12::locale_ref)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0x731): undefined reference to fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
-  /opt/conda/conda-bld/hmntrimmer_1773247891189/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function main':
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: hmntrimmer.cpp:(.text._ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_[_ZN6spdlog6logger4log_IJRjEEEvNS_10source_locENS_5level10level_enumEN3fmt3v1217basic_string_viewIcEEDpOT_]0x731): undefined reference to fmt::v12::vformat[abi:cxx11](fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>)'
+  /opt/conda/conda-bld/hmntrimmer_1773250719208/_build_env/bin/../lib/gcc/x86_64-conda-linux-gnu/8.5.0/../../../../x86_64-conda-linux-gnu/bin/ld: ./obj/hmntrimmer.o: in function main':
   hmntrimmer.cpp:(.text.startup0xa24): undefined reference to fmt::v12::detail::vformat_to(fmt::v12::detail::buffer<char>&, fmt::v12::basic_string_view<char>, fmt::v12::basic_format_args<fmt::v12::context>, fmt::v12::locale_ref)'
   collect2: error: ld returned 1 exit status
   make: *** [Makefile:26: HmnTrimmer] Error 1
@@ -82,7 +82,7 @@ log: |2-
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
       raise subprocess.CalledProcessError(proc.returncode, _args)
-  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/hmntrimmer_1773247891189/work/conda_build.sh']' returned non-zero exit status 2.
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/hmntrimmer_1773250719208/work/conda_build.sh']' returned non-zero exit status 2.
 
   The above exception was the direct cause of the following exception:
 
@@ -100,5 +100,5 @@ log: |2-
                            ^^^^^^
     File "/opt/conda/lib/python3.12/site-packages/conda_build/build.py", line 2578, in build
       raise BuildScriptException(str(exc), caused_by=exc) from exc
-  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/hmntrimmer_1773247891189/work/conda_build.sh']' returned non-zero exit status 2.
+  conda_build.exceptions.BuildScriptException: Command '['/bin/bash', '-o', 'errexit', '/opt/conda/conda-bld/hmntrimmer_1773250719208/work/conda_build.sh']' returned non-zero exit status 2.
 # Last 100 lines of the build log.
