@@ -4,15 +4,15 @@ log: |2-
       - libblas 3.11.0 5_he492b99_openblas
       - libcblas 3.11.0 5_h9b27e0a_openblas
       - liblapack 3.11.0 5_h859234e_openblas
-      - numpy 2.4.2 py311h3402b43_1
-      - libboost-python 1.85.0 py311h49c5ead_4
-      - libboost-python-devel 1.85.0 py311he764780_4
-      - boost 1.85.0 he764780_4
+      - numpy 2.4.2 py312hb34da66_1
+      - libboost-python 1.85.0 py312h44e70fa_4
+      - libboost-python-devel 1.85.0 py312h0be7463_4
+      - boost 1.85.0 h0be7463_4
     run:
-      - python_abi 3.11.* *_cp311
+      - python >=3.12,<3.13.0a0
       - htslib >=1.23,<1.24.0a0
-      - python >=3.11,<3.12.0a0
       - libcxx >=19
+      - python_abi 3.12.* *_cp312
   test:
     imports:
       - libshorah
@@ -27,10 +27,10 @@ log: |2-
     copy_test_source_files: true
 
 
-  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/libshorah_1772909311999/work
-  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1772909311999/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
-  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1772909311999/_build_env
-  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1772909311999/work
+  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/libshorah_1773248964510/work
+  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1773248964510/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac
+  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1773248964510/_build_env
+  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/libshorah_1773248964510/work
   INFO: activate_cctools_osx-64.sh made the following environmental changes:
   AR=x86_64-apple-darwin13.4.0-ar
   AS=x86_64-apple-darwin13.4.0-as
@@ -92,8 +92,8 @@ log: |2-
   -- Check for working CXX compiler: $BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang - skipped
   -- Detecting CXX compile features
   -- Detecting CXX compile features - done
-  -- Found Python: $BUILD_PREFIX/bin/python3.11 (found version "3.11.15") found components: Interpreter Development Development.Module Development.Embed
-  -- Python module destination: lib/python3.11/site-packages
+  -- Found Python: $BUILD_PREFIX/bin/python3.12 (found version "3.12.13") found components: Interpreter Development Development.Module Development.Embed
+  -- Python module destination:
   -- Performing Test HAS_FLTO_THIN
   -- Performing Test HAS_FLTO_THIN - Success
   -- Performing Test HAS_FLTO
