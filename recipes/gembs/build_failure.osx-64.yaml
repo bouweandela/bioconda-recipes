@@ -1,104 +1,104 @@
-recipe_sha: e5599c16c7d33cf7a0586adbda42598f4e9696d4b8f0f32b080eeb7e620521cd  # The hash of the recipe's meta.yaml at which this recipe failed to build.
+recipe_sha: ac2db444ba6c33081c84956a1f45f94bf705608fb96aa2805108076d74395a40  # The hash of the recipe's meta.yaml at which this recipe failed to build.
 skiplist: true # Set to true to skiplist this recipe so that it will be ignored as long as its latest commit is the one given above.
 log: |2-
-      - zstd 1.5.7 h3eecb57_6
-      - krb5 1.22.2 h207b36a_0
-      - libnghttp2 1.67.0 h3338091_0
-      - libssh2 1.11.1 hed3591d_0
-      - python 3.10.20 hea035f4_0_cpython
-      - libcurl 8.18.0 h9a2545f_1
-      - packaging 26.0 pyhcf101f3_0
-      - setuptools 82.0.0 pyh332efcf_0
-      - htslib 1.23 h9f635df_0
-      - wheel 0.46.3 pyhd8ed1ab_0
-      - pip 26.0.1 pyh8b19718_0
-    run:
-      - ucsc-bedtobigbed
-      - zlib
-      - multiprocess
-      - samtools
-      - libzlib >=1.3.1,<2.0a0
-      - bs_call
-      - matplotlib-base
-      - gem3-mapper
-      - setuptools
-      - openssl >=3.5.5,<4.0a0
-      - pigz
-      - bcftools
-      - bzip2 >=1.0.8,<2.0a0
-      - htslib >=1.23,<1.24.0a0
-      - ucsc-wigtobigwig
-      - python_abi 3.10.* *_cp310
-      - python >=3.10,<3.11.0a0
-  test:
-    commands:
-      - gemBS
-  about:
-    home: https://github.com/heathsc/gemBS
-    license: GPL-3.0
-    license_file: LICENSE.md
-    summary: gemBS is a bioinformatics pipeline designed for high throughput analysis
-      of DNA methylation from Whole Genome Bisulfite Sequencing data (WGBS).
-  extra:
-    identifiers:
-      - doi:10.1101/201988
-    skip-lints:
-      - uses_setuptools
-    final: true
-    copy_test_source_files: true
+      libtiff:           4.7.0-hf4bdac2_2              conda-forge
+      libuuid:           2.41.3-h3fe7000_0             conda-forge
+      libwebp-base:      1.6.0-hb807250_0              conda-forge
+      libxcb:            1.17.0-hf1f96e2_0             conda-forge
+      libzlib:           1.3.1-hd23fc13_2              conda-forge
+      llvm-openmp:       8.0.1-h770b8ee_0              conda-forge
+      matplotlib-base:   3.10.8-py311h48d7e91_0        conda-forge
+      multiprocess:      0.70.19-py311ha332486_0       conda-forge
+      munkres:           1.1.4-pyhd8ed1ab_1            conda-forge
+      mysql-connector-c: 6.1.11-h89ed7f3_1008          conda-forge
+      ncurses:           6.5-h0622a9a_3                conda-forge
+      numpy:             2.4.2-py311h3402b43_1         conda-forge
+      openjpeg:          2.5.3-h036ada5_1              conda-forge
+      openmp:            8.0.1-0                       conda-forge
+      openssl:           3.6.1-hb6871ef_1              conda-forge
+      packaging:         26.0-pyhcf101f3_0             conda-forge
+      perl:              5.32.1-7_h10d778d_perl5       conda-forge
+      pigz:              2.8-h380d223_2                conda-forge
+      pillow:            11.3.0-py311ha88f94d_3        conda-forge
+      pthread-stubs:     0.4-h00291cd_1002             conda-forge
+      pyparsing:         3.3.2-pyhcf101f3_0            conda-forge
+      python:            3.11.15-ha9537fe_0_cpython    conda-forge
+      python-dateutil:   2.9.0.post0-pyhe01879c_2      conda-forge
+      python_abi:        3.11-8_cp311                  conda-forge
+      qhull:             2020.2-h3c5361c_5             conda-forge
+      readline:          8.3-h68b038d_0                conda-forge
+      samtools:          1.23-ha21ef43_0               bioconda
+      setuptools:        82.0.1-pyh332efcf_0           conda-forge
+      six:               1.17.0-pyhe01879c_1           conda-forge
+      tk:                8.6.13-h7142dee_3             conda-forge
+      tzdata:            2025c-hc9c84f9_1              conda-forge
+      ucsc-bedtobigbed:  482-hfbcbe9a_0                bioconda
+      ucsc-wigtobigwig:  482-hfbcbe9a_1                bioconda
+      unicodedata2:      17.0.1-py311hc71d4c3_0        conda-forge
+      xorg-libxau:       1.0.12-h8616949_1             conda-forge
+      xorg-libxdmcp:     1.1.5-h8616949_1              conda-forge
+      zlib:              1.3.1-hd23fc13_2              conda-forge
+      zstd:              1.5.7-h3eecb57_6              conda-forge
 
+  Preparing transaction: ...working... done
+  Verifying transaction: ...working... done
+  Executing transaction: ...working... done
+   gemBS
+  Traceback (most recent call last):
+    File "/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/gemBS", line 35, in <module>
+      sys.exit(load_entry_point('gemBS==3.5.5', 'console_scripts', 'gemBS')())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/gemBS", line 27, in importlib_load_entry_point
+      return next(matches).load()
+             ^^^^^^^^^^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/lib/python3.11/importlib/metadata/__init__.py", line 202, in load
+      module = import_module(match.group('module'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/lib/python3.11/importlib/__init__.py", line 126, in import_module
+      return _bootstrap._gcd_import(name[level:], package, level)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+    File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+    File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+    File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+    File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+    File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+    File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+    File "/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/lib/python3.11/site-packages/gemBS/__init__.py", line 10, in <module>
+      import pkg_resources
+  ModuleNotFoundError: No module named 'pkg_resources'
+  WARNING: Tests failed for gembs-3.5.5_IHEC-py311hd6437e7_10.conda - moving package to /opt/mambaforge/envs/bioconda/conda-bld/broken
+  Traceback (most recent call last):
+  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/_test_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla
+  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/test_tmp
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3497, in test
+      utils.check_call_env(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 411, in check_call_env
+      return _func_defaulting_env_to_os_environ("call", *popenargs, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/utils.py", line 387, in _func_defaulting_env_to_os_environ
+      raise subprocess.CalledProcessError(proc.returncode, _args)
+  subprocess.CalledProcessError: Command '['/bin/bash', '-o', 'errexit', '/opt/mambaforge/envs/bioconda/conda-bld/gembs_1773249881115/test_tmp/conda_test_runner.sh']' returned non-zero exit status 1.
 
-  source tree in: /opt/mambaforge/envs/bioconda/conda-bld/gembs_1772914630727/work
-  export PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/gembs_1772914630727/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol
-  export BUILD_PREFIX=/opt/mambaforge/envs/bioconda/conda-bld/gembs_1772914630727/_build_env
-  export SRC_DIR=/opt/mambaforge/envs/bioconda/conda-bld/gembs_1772914630727/work
-  INFO: activate_cctools_osx-64.sh made the following environmental changes:
-  AR=x86_64-apple-darwin13.4.0-ar
-  AS=x86_64-apple-darwin13.4.0-as
-  CHECKSYMS=x86_64-apple-darwin13.4.0-checksyms
-  INSTALL_NAME_TOOL=x86_64-apple-darwin13.4.0-install_name_tool
-  LD=x86_64-apple-darwin13.4.0-ld
-  LIBTOOL=x86_64-apple-darwin13.4.0-libtool
-  LIPO=x86_64-apple-darwin13.4.0-lipo
-  NM=x86_64-apple-darwin13.4.0-nm
-  NMEDIT=x86_64-apple-darwin13.4.0-nmedit
-  OTOOL=x86_64-apple-darwin13.4.0-otool
-  PAGESTUFF=x86_64-apple-darwin13.4.0-pagestuff
-  RANLIB=x86_64-apple-darwin13.4.0-ranlib
-  REDO_PREBINDING=x86_64-apple-darwin13.4.0-redo_prebinding
-  SEG_ADDR_TABLE=x86_64-apple-darwin13.4.0-seg_addr_table
-  SEG_HACK=x86_64-apple-darwin13.4.0-seg_hack
-  SEGEDIT=x86_64-apple-darwin13.4.0-segedit
-  SIZE=x86_64-apple-darwin13.4.0-size
-  STRINGS=x86_64-apple-darwin13.4.0-strings
-  STRIP=x86_64-apple-darwin13.4.0-strip
-  INFO: activate_clang_osx-64.sh made the following environmental changes:
-  ac_cv_func_malloc_0_nonnull=yes
-  ac_cv_func_realloc_0_nonnull=yes
-  build_alias=x86_64-apple-darwin13.4.0
-  CC_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang
-  CC=x86_64-apple-darwin13.4.0-clang
-  CFLAGS=-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/gembs-3.5.5_IHEC -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
-  CLANG=x86_64-apple-darwin13.4.0-clang
-  CMAKE_ARGS=-DCMAKE_AR=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ar -DCMAKE_CXX_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ar -DCMAKE_C_COMPILER_AR=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ar -DCMAKE_RANLIB=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ranlib -DCMAKE_CXX_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ranlib -DCMAKE_C_COMPILER_RANLIB=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ranlib -DCMAKE_LINKER=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-ld -DCMAKE_STRIP=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-strip -DCMAKE_INSTALL_NAME_TOOL=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-install_name_tool -DCMAKE_LIBTOOL=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-libtool -DCMAKE_OSX_DEPLOYMENT_TARGET=11.3 -DCMAKE_OSX_SYSROOT=/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_FIND_APPBUNDLE=LAST -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_PROGRAM_PATH=$BUILD_PREFIX/bin;$PREFIX/bin
-  CMAKE_PREFIX_PATH=:$PREFIX
-  CONDA_TOOLCHAIN_BUILD=x86_64-apple-darwin13.4.0
-  CONDA_TOOLCHAIN_HOST=x86_64-apple-darwin13.4.0
-  CPP_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang-cpp
-  CPP=x86_64-apple-darwin13.4.0-clang-cpp
-  CPPFLAGS=-D_FORTIFY_SOURCE=2 -isystem $PREFIX/include -mmacosx-version-min=11.3
-  DEBUG_CFLAGS=-march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -Og -g -Wall -Wextra -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/gembs-3.5.5_IHEC -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix
-  host_alias=x86_64-apple-darwin13.4.0
-  HOST=x86_64-apple-darwin13.4.0
-  LDFLAGS_LD=-headerpad_max_install_names -dead_strip_dylibs -rpath $PREFIX/lib -L$PREFIX/lib
-  LDFLAGS=-Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,$PREFIX/lib -L$PREFIX/lib
-  MESON_ARGS=-Dbuildtype=release --prefix=$PREFIX -Dlibdir=lib
-  OBJC_FOR_BUILD=$BUILD_PREFIX/bin/x86_64-apple-darwin13.4.0-clang
-  OBJC=x86_64-apple-darwin13.4.0-clang
-  $SRC_DIR/tools $SRC_DIR
-  Nothing to see here move along
-  cd gem3-mapper; ./configure
-  checking for x86_64-apple-darwin13.4.0-gcc... x86_64-apple-darwin13.4.0-clang
-  checking whether the C compiler works... yes
-  checking for C compiler default output file name... a.out
+  During handling of the above exception, another exception occurred:
+
+  Traceback (most recent call last):
+    File "/opt/mambaforge/envs/bioconda/bin/conda-build", line 11, in <module>
+      sys.exit(execute())
+               ^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/cli/main_build.py", line 622, in execute
+      api.build(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/api.py", line 211, in build
+      return build_tree(
+             ^^^^^^^^^^^
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3684, in build_tree
+      test(pkg, config=metadata.config.copy(), stats=stats)
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3511, in test
+      tests_failed(
+    File "/opt/mambaforge/envs/bioconda/lib/python3.12/site-packages/conda_build/build.py", line 3558, in tests_failed
+      raise CondaBuildUserError("TESTS FAILED: "  os.path.basename(pkg))
+  conda_build.exceptions.CondaBuildUserError: TESTS FAILED: gembs-3.5.5_IHEC-py311hd6437e7_10.conda
 # Last 100 lines of the build log.
